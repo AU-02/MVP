@@ -1,0 +1,31 @@
+|--dataloader
+    |--MS2_dataset.py
+|--MS2dataset
+    |--sync_data
+        |-- <Seq name>
+            |-- rgb, nir, thr
+                |-- img_left
+                |-- img_right
+                |-- depth_gt
+                |-- depth_refl_gt
+                |-- odom
+            |-- lidar
+                |-- left
+                |-- right
+            |-- gps_imu
+                |-- data
+            |-- calib.npy
+    |--proj_depth
+        |-- <Seq name>
+            |-- rgb, nir, thr
+                |-- depth
+                |-- intensity
+                |-- depth_multi
+                |-- intensity_multi
+                |-- depth_filtered 
+    |--odom
+        |-- <Seq name>
+        |-- rgb, nir, thr, odom
+|--utils
+    |--utils.py
+|--demo.py
